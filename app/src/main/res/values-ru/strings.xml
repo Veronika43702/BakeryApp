@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BakeryApp</string>
+    <string name="title">My Backery</string>
+    <string name="goods_list">Список товаров</string>
+    <string name="cupcake_constructor">Конструктор капкейков</string>
+    <string name="cake_constructor">Конструктор торта</string>
+    <string name="add_temporary_good">Добавить временный товар</string>
+    <string name="add">Добавить товар/компонент/продукт</string>
+    <string name="temporary_list">Список временных товаров</string>
+    <string name="components_list">Список компонентов</string>
+    <string name="products_list">Список продуктов</string>
+</resources>

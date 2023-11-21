@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BakeryApp</string>
+    <string name="title">My Backery</string>
+    <string name="goods_list">Goods list</string>
+    <string name="cupcake_constructor">Cupcake constructor</string>
+    <string name="cake_constructor">Cake constructor</string>
+    <string name="add_temporary_good">Add a temporary good</string>
+    <string name="add">Add</string>
+    <string name="temporary_list">Temporary goods</string>
+    <string name="components_list">Components list</string>
+    <string name="products_list">Product list</string>
+</resources>
