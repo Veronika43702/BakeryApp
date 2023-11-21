@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_pink"
     android:theme="@style/Base.Theme.BakeryApp"
     app:layout_constraintBottom_toTopOf="@id/bottom_barrier"
     tools:context=".activity.CupcakeFragment">
@@ -27,7 +26,7 @@
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/background_blue"
+                android:theme="@style/theme.for.text"
                 android:fontFamily="@font/nexa_script"
                 android:paddingTop="@dimen/text_spacing"
                 android:text="@string/cupcake_constructor"
@@ -120,7 +119,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/text_spacing"
-                android:background="@color/background_blue"
                 android:ellipsize="end"
                 android:hint="@string/quantity_input"
                 android:singleLine="true"
@@ -143,7 +141,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/text_spacing"
-                android:background="@color/background_blue"
                 android:ellipsize="end"
                 android:hint="@string/sponge_cake_choice"
                 android:singleLine="true"
@@ -166,7 +163,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/text_spacing"
-                android:background="@color/background_blue"
                 android:ellipsize="end"
                 android:hint="@string/filling_choice"
                 android:singleLine="true"
@@ -189,7 +185,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/text_spacing"
-                android:background="@color/background_blue"
                 android:hint="@string/cream_choice"
                 android:ellipsize="end"
                 android:singleLine="true"
@@ -230,7 +225,6 @@
                 android:id="@+id/sponge_receipt"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-
                 android:paddingBottom="@dimen/common_spacing"
                 android:layout_marginStart="@dimen/text_spacing"
                 app:layout_constraintTop_toBottomOf="@id/sponge_receipt_title" />
@@ -250,7 +244,7 @@
                 android:layout_height="0dp"
                 android:layout_marginStart="@dimen/text_spacing"
                 android:paddingBottom="@dimen/common_spacing"
-                app:layout_constraintTop_toBottomOf="@id/filling_receipt_title" />
+                    app:layout_constraintTop_toBottomOf="@id/filling_receipt_title" />
 
             <TextView
                 android:id="@+id/cream_receipt_title"
