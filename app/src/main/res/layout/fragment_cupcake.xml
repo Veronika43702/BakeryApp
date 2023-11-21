@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_pink"
+    android:theme="@style/Base.Theme.BakeryApp"
+    app:layout_constraintBottom_toTopOf="@id/bottom_barrier"
+    tools:context=".activity.CupcakeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background_blue"
+                android:fontFamily="@font/nexa_script"
+                android:paddingTop="@dimen/text_spacing"
+                android:text="@string/cupcake_constructor"
+                android:textAlignment="center"
+                android:textSize="36dp"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/title_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="title"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/cupcake_text"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/cupcake"
+                app:layout_constraintTop_toBottomOf="@id/title_barrier" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/cupcake_text"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/price"
+                app:layout_constraintTop_toBottomOf="@id/title_barrier" />
+
+            <TextView
+                android:id="@+id/total_price"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                app:layout_constraintStart_toEndOf="@id/price"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/total_price"
+                app:layout_constraintTop_toBottomOf="@id/title_barrier" />
+
+
+            <TextView
+                android:id="@+id/price_value"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toEndOf="@id/cupcake_text"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="0"
+                android:paddingBottom="@dimen/min_spacing"
+                app:layout_constraintTop_toBottomOf="@id/price" />
+
+            <TextView
+                android:id="@+id/total_price_value"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                app:layout_constraintStart_toEndOf="@id/price"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:paddingBottom="@dimen/min_spacing"
+                android:text="0"
+                app:layout_constraintTop_toBottomOf="@id/total_price" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/info_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="price_value, total_price_value"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/quantity_text"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/quantity"
+                app:layout_constraintBottom_toBottomOf="@id/quantity_value"
+                app:layout_constraintTop_toBottomOf="@id/info_barrier" />
+
+            <EditText
+                android:id="@+id/quantity_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_spacing"
+                android:background="@color/background_blue"
+                android:ellipsize="end"
+                android:hint="@string/quantity_input"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/sponge_text"
+                app:layout_constraintTop_toBottomOf="@id/info_barrier" />
+
+            <TextView
+                android:id="@+id/sponge_text"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/sponge_cake"
+                app:layout_constraintBottom_toBottomOf="@id/sponge_list"
+                app:layout_constraintTop_toBottomOf="@id/quantity_text" />
+
+            <EditText
+                android:id="@+id/sponge_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_spacing"
+                android:background="@color/background_blue"
+                android:ellipsize="end"
+                android:hint="@string/sponge_cake_choice"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/sponge_text"
+                app:layout_constraintTop_toBottomOf="@id/quantity_value" />
+
+            <TextView
+                android:id="@+id/filling_text"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/filling"
+                app:layout_constraintBottom_toBottomOf="@id/filling_list"
+                app:layout_constraintTop_toBottomOf="@id/sponge_text" />
+
+            <EditText
+                android:id="@+id/filling_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_spacing"
+                android:background="@color/background_blue"
+                android:ellipsize="end"
+                android:hint="@string/filling_choice"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/sponge_text"
+                app:layout_constraintTop_toBottomOf="@id/sponge_list" />
+
+            <TextView
+                android:id="@+id/cream_text"
+                android:layout_width="@dimen/width_text"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:text="@string/cream"
+                app:layout_constraintBottom_toBottomOf="@id/cream_list"
+                app:layout_constraintTop_toBottomOf="@id/filling_text" />
+
+            <EditText
+                android:id="@+id/cream_list"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_spacing"
+                android:background="@color/background_blue"
+                android:hint="@string/cream_choice"
+                android:ellipsize="end"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/sponge_text"
+                app:layout_constraintTop_toBottomOf="@id/filling_list" />
+
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/reciept_barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:barrierDirection="bottom"
+                app:constraint_referenced_ids="cream_list, cream_text"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/receipt"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                android:textStyle="bold"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/reciept"
+                app:layout_constraintTop_toBottomOf="@id/reciept_barrier" />
+
+            <TextView
+                android:id="@+id/sponge_receipt_title"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/sponge_cake"
+                app:layout_constraintTop_toBottomOf="@id/receipt" />
+
+            <TextView
+                android:id="@+id/sponge_receipt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:paddingBottom="@dimen/common_spacing"
+                android:layout_marginStart="@dimen/text_spacing"
+                app:layout_constraintTop_toBottomOf="@id/sponge_receipt_title" />
+
+            <TextView
+                android:id="@+id/filling_receipt_title"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/filling"
+                app:layout_constraintTop_toBottomOf="@id/sponge_receipt" />
+
+            <TextView
+                android:id="@+id/filling_receipt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/text_spacing"
+                android:paddingBottom="@dimen/common_spacing"
+                app:layout_constraintTop_toBottomOf="@id/filling_receipt_title" />
+
+            <TextView
+                android:id="@+id/cream_receipt_title"
+                android:layout_width="@dimen/width_text"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:layout_height="0dp"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/cream"
+                app:layout_constraintTop_toBottomOf="@id/filling_receipt" />
+
+            <TextView
+                android:id="@+id/cream_receipt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/text_spacing"
+                app:layout_constraintTop_toBottomOf="@id/cream_receipt_title" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

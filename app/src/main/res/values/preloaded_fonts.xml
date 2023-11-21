@@ -2,5 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/alex_brush</item>
+        <item>@font/tangerine</item>
+        <item>@font/ubuntu_mono</item>
     </array>
 </resources>

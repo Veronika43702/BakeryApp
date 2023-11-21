@@ -7,7 +7,7 @@
     android:theme="@style/Base.Theme.BakeryApp"
     android:background="@color/background_pink"
     app:layout_constraintBottom_toTopOf="@id/bottom_barrier"
-    tools:context=".activity.MenuFragment">
+    tools:context=".activity.TempGoodsFragment">
 
     <EditText
         android:id="@+id/search"

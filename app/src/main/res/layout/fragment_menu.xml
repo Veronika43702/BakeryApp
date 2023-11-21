@@ -51,7 +51,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/component_list"
+        android:id="@+id/component_list_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/common_spacing"
@@ -61,12 +61,12 @@
 
 
     <Button
-        android:id="@+id/product_list"
+        android:id="@+id/product_list_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/common_spacing"
         android:text="@string/products_list"
-        app:layout_constraintTop_toBottomOf="@id/component_list"
+        app:layout_constraintTop_toBottomOf="@id/component_list_button"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -75,7 +75,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/common_spacing"
         android:text="@string/cupcake_constructor"
-        app:layout_constraintTop_toBottomOf="@id/product_list"
+        app:layout_constraintTop_toBottomOf="@id/product_list_button"
         tools:ignore="MissingConstraints" />
 
     <Button

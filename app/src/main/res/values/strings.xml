@@ -9,4 +9,23 @@
     <string name="temporary_list">Temporary goods</string>
     <string name="components_list">Components list</string>
     <string name="products_list">Product list</string>
+
+    <string name="search">search...</string>
+
+    <string name="price">Price</string>
+    <string name="total_price">Total</string>
+
+    <string name="quantity">Quantity</string>
+    <string name="sponge_cake">Sponge cake</string>
+    <string name="filling">Filling</string>
+    <string name="cream">Cream</string>
+
+    <string name="quantity_input">Input quantity</string>
+    <string name="sponge_cake_choice">Сhoose sponge cake</string>
+    <string name="filling_choice">Choose filling</string>
+    <string name="cream_choice">Choose cream</string>
+
+    <string name="cupcake">Cupcake</string>
+
+    <string name="reciept">Reciept</string>
 </resources>
