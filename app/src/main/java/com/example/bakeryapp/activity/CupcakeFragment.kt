@@ -17,7 +17,9 @@ class CupcakeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding = FragmentCupcakeBinding.inflate(layoutInflater, container, false)
-
+            binding.spongeMenu.setOnClickListener{
+                //sponge_ingredient_table
+            }
         return binding.root
     }
 }

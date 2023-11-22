@@ -96,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 app:barrierDirection="bottom"
-                app:constraint_referenced_ids="price_value, total_price_value"
+                app:constraint_referenced_ids="price_value, weight_value"
                 tools:ignore="MissingConstraints" />
 
             <TextView
