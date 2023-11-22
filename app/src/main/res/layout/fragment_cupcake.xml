@@ -242,9 +242,9 @@
 
                 <TableRow>
 
-                    <TextView tools:text="масло растительное" />
+                    <TextView android:text="масло растительное" />
 
-                    <TextView tools:text="110" />
+                    <TextView android:text="110" />
                 </TableRow>
 
             </TableLayout>
@@ -288,9 +288,9 @@
 
                 <TableRow>
 
-                    <TextView tools:text="сахар" />
+                    <TextView android:text="сахар" />
 
-                    <TextView tools:text="54" />
+                    <TextView android:text="54" />
                 </TableRow>
 
             </TableLayout>
@@ -383,6 +383,7 @@
             <TextView
                 android:id="@+id/sponge_receipt"
                 style="@style/large_text"
+                android:text="Тут будет рецепт"
                 app:layout_constraintTop_toBottomOf="@id/sponge_receipt_title" />
 
             <View

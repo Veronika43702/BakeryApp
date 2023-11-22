@@ -265,10 +265,8 @@
                 app:layout_constraintTop_toBottomOf="@id/sponge_view">
 
                 <TableRow>
-
-                    <TextView tools:text="масло растительное" />
-
-                    <TextView tools:text="110" />
+                    <TextView android:text="масло растительное" />
+                    <TextView android:text="110" />
                 </TableRow>
 
             </TableLayout>
