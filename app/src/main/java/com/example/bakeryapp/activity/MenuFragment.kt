@@ -52,6 +52,13 @@ class MenuFragment : Fragment() {
             )
         }
 
+        // переход на фрагмент конструктора тортов
+        binding.cakeConstructorButton.setOnClickListener {
+            findNavController().navigate(
+                R.id.action_fragment_menu_to_fragment_cake,
+            )
+        }
+
         return binding.root
     }
 }

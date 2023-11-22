@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:theme="@style/Base.Theme.BakeryApp"
     app:layout_constraintBottom_toTopOf="@id/bottom_barrier"
-    tools:context=".activity.CupcakeFragment">
+    tools:context=".activity.CakeFragment">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             <TextView
                 android:id="@+id/title"
                 style="@style/title_text"
-                android:text="@string/cupcake_constructor"
+                android:text="@string/cake_constructor"
                 tools:ignore="MissingConstraints" />
 
             <androidx.constraintlayout.widget.Barrier
@@ -42,8 +42,18 @@
                 style="@style/first_title_text"
                 android:layout_width="@dimen/width_text"
                 android:paddingStart="@dimen/text_spacing"
-                android:text="@string/cupcake"
+                android:text="@string/cake"
                 app:layout_constraintBottom_toTopOf="@id/info_barrier"
+                app:layout_constraintTop_toBottomOf="@id/title_barrier" />
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="@dimen/width_text"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/weight"
+                app:layout_constraintStart_toEndOf="@id/cupcake_text"
                 app:layout_constraintTop_toBottomOf="@id/title_barrier" />
 
             <TextView
@@ -53,22 +63,13 @@
                 android:layout_marginTop="@dimen/min_spacing"
                 android:paddingStart="@dimen/text_spacing"
                 android:text="@string/price"
-                app:layout_constraintStart_toEndOf="@id/cupcake_text"
-                app:layout_constraintTop_toBottomOf="@id/title_barrier" />
-
-            <TextView
-                android:id="@+id/total_price"
-                android:layout_width="@dimen/width_text"
-                android:layout_height="0dp"
-                android:layout_marginTop="@dimen/min_spacing"
-                android:paddingStart="@dimen/text_spacing"
-                android:text="@string/total_price"
-                app:layout_constraintStart_toEndOf="@id/price"
+                app:layout_constraintStart_toEndOf="@id/weight"
                 app:layout_constraintTop_toBottomOf="@id/title_barrier" />
 
 
+
             <TextView
-                android:id="@+id/price_value"
+                android:id="@+id/weight_value"
                 android:layout_width="@dimen/width_text"
                 android:layout_height="0dp"
                 android:layout_marginTop="@dimen/min_spacing"
@@ -79,15 +80,15 @@
                 app:layout_constraintTop_toBottomOf="@id/price" />
 
             <TextView
-                android:id="@+id/total_price_value"
+                android:id="@+id/price_value"
                 android:layout_width="@dimen/width_text"
                 android:layout_height="0dp"
                 android:layout_marginTop="@dimen/min_spacing"
                 android:paddingStart="@dimen/text_spacing"
                 android:paddingBottom="@dimen/min_spacing"
                 android:hint="0"
-                app:layout_constraintStart_toEndOf="@id/price"
-                app:layout_constraintTop_toBottomOf="@id/total_price" />
+                app:layout_constraintStart_toEndOf="@id/weight_value"
+                app:layout_constraintTop_toBottomOf="@id/price" />
 
             <androidx.constraintlayout.widget.Barrier
                 android:id="@+id/info_barrier"
@@ -99,26 +100,49 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
-                android:id="@+id/quantity_text"
+                android:id="@+id/diameter_text"
                 android:layout_width="@dimen/width_text"
                 android:layout_height="0dp"
                 android:layout_marginTop="@dimen/min_spacing"
                 android:paddingStart="@dimen/text_spacing"
-                android:text="@string/quantity"
-                app:layout_constraintBottom_toBottomOf="@id/quantity_value"
+                android:text="@string/diameter"
+                app:layout_constraintBottom_toBottomOf="@id/diameter_value"
                 app:layout_constraintTop_toBottomOf="@id/info_barrier" />
 
             <EditText
-                android:id="@+id/quantity_value"
+                android:id="@+id/diameter_value"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/text_spacing"
                 android:ellipsize="end"
-                android:hint="@string/quantity_input"
+                android:hint="@string/diameter_input"
                 android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/sponge_text"
                 app:layout_constraintTop_toBottomOf="@id/info_barrier" />
+
+            <TextView
+                android:id="@+id/layer_text"
+                android:layout_width="@dimen/width_text"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/min_spacing"
+                android:paddingStart="@dimen/text_spacing"
+                android:text="@string/layer"
+                app:layout_constraintBottom_toBottomOf="@id/layer_value"
+                app:layout_constraintTop_toBottomOf="@id/diameter_text" />
+
+
+            <EditText
+                android:id="@+id/layer_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/text_spacing"
+                android:ellipsize="end"
+                android:hint="@string/layer_input"
+                android:singleLine="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/sponge_text"
+                app:layout_constraintTop_toBottomOf="@id/diameter_value" />
 
             <TextView
                 android:id="@+id/sponge_text"
@@ -128,7 +152,7 @@
                 android:paddingStart="@dimen/text_spacing"
                 android:text="@string/sponge_cake"
                 app:layout_constraintBottom_toBottomOf="@id/sponge_list"
-                app:layout_constraintTop_toBottomOf="@id/quantity_text" />
+                app:layout_constraintTop_toBottomOf="@id/layer_text" />
 
             <EditText
                 android:id="@+id/sponge_list"
@@ -140,7 +164,7 @@
                 android:singleLine="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/sponge_text"
-                app:layout_constraintTop_toBottomOf="@id/quantity_value" />
+                app:layout_constraintTop_toBottomOf="@id/layer_value" />
 
             <TextView
                 android:id="@+id/filling_text"
@@ -234,7 +258,7 @@
                 app:iconTint="@color/standard"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/sponge_view" />
-
+            
             <TableLayout
                 android:id="@+id/sponge_ingredient_table"
                 style="@style/table"

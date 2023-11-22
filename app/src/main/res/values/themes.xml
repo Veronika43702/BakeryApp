@@ -8,7 +8,15 @@
 
     <style name="Theme.BakeryApp" parent="Base.Theme.BakeryApp" />
 
-    <style name="theme.for.text" parent="Base.Theme.BakeryApp" >
+    <style name="theme.BakeryApp.titles" parent="Base.Theme.BakeryApp" >
         <item name="android:background">@color/background_blue</item>
+    </style>
+
+    <style name="theme.BakeryApp.second_title" parent="Base.Theme.BakeryApp" >
+        <item name="android:background">@color/background_second_title</item>
+    </style>
+
+    <style name="theme.BakeryApp.third_title" parent="Base.Theme.BakeryApp" >
+        <item name="android:background">@color/background_third_title</item>
     </style>
 </resources>

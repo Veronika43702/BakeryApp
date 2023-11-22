@@ -7,7 +7,7 @@
     \
     <style name="Theme.BakeryApp" parent="Base.Theme.BakeryApp" />
 
-    <style name="theme.for.text" parent="Base.Theme.BakeryApp" >
+    <style name="theme.BakeryApp.titles" parent="Base.Theme.BakeryApp" >
         <item name="android:background">@android:color/background_dark</item>
     </style>
 </resources>

@@ -4,4 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_pink">#F1E4FF</color>
     <color name="background_blue">#DEEBFF</color>
+    <color name="background_second_title">#EBD3FA</color>
+    <color name="background_third_title">#F1DFFF</color>
+    <color name="standard">#6750A4</color>
+
+
 </resources>

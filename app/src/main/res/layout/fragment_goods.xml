@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/common_spacing"
-        android:theme="@style/theme.for.text"
+        android:theme="@style/theme.BakeryApp.titles"
         android:paddingBottom="@dimen/common_spacing"
         android:paddingHorizontal="@dimen/common_spacing"
         app:layout_constraintStart_toStartOf="parent"

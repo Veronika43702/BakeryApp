@@ -13,20 +13,27 @@
 
     <string name="search">поиск...</string>
 
+    <string name="weight">Вес</string>
     <string name="price">Цена 1шт</string>
     <string name="total_price">Стоимость</string>
 
     <string name="quantity">Количество</string>
+    <string name="diameter">Диаметр</string>
+    <string name="layer">Слои</string>
     <string name="sponge_cake">Бисквит</string>
     <string name="filling">Начинка</string>
     <string name="cream">Крем</string>
 
     <string name="quantity_input">Введите количество</string>
+    <string name="diameter_input">Введите диаметр</string>
+    <string name="layer_input">Введите количество слоев</string>
     <string name="sponge_cake_choice">Выберите бискит</string>
     <string name="filling_choice">Выберите начинку</string>
     <string name="cream_choice">Выберите крем</string>
 
     <string name="cupcake">Капкейк</string>
+    <string name="cake">Торт</string>
 
-    <string name="reciept">Рецепт</string>
+    <string name="ingredient">Состав</string>
+    <string name="receipt">Рецепт</string>
 </resources>

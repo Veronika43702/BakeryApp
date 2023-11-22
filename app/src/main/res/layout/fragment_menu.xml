@@ -11,14 +11,8 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/theme.for.text"
-        android:fontFamily="@font/alex_brush"
-        android:paddingTop="@dimen/text_spacing"
+        style="@style/title_text"
         android:text="@string/title"
-        android:textAlignment="center"
-        android:textSize="36dp"
         tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.Barrier
@@ -32,9 +26,7 @@
 
     <Button
         android:id="@+id/good_list_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/common_spacing"
+        style="@style/list_item_text"
         android:layout_marginTop="@dimen/common_spacing"
         android:text="@string/goods_list"
         app:layout_constraintTop_toTopOf="@id/title_barrier"
@@ -43,18 +35,14 @@
 
     <Button
         android:id="@+id/temporary_list_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/common_spacing"
+        style="@style/list_item_text"
         android:text="@string/temporary_list"
         app:layout_constraintTop_toBottomOf="@id/good_list_button"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/component_list_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/common_spacing"
+        style="@style/list_item_text"
         android:text="@string/components_list"
         app:layout_constraintTop_toBottomOf="@id/temporary_list_button"
         tools:ignore="MissingConstraints" />
@@ -62,45 +50,35 @@
 
     <Button
         android:id="@+id/product_list_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/common_spacing"
+        style="@style/list_item_text"
         android:text="@string/products_list"
         app:layout_constraintTop_toBottomOf="@id/component_list_button"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/cupcake_constructor_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/common_spacing"
+        style="@style/list_item_text"
         android:text="@string/cupcake_constructor"
         app:layout_constraintTop_toBottomOf="@id/product_list_button"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/cake_constructor_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/common_spacing"
+        style="@style/list_item_text"
         android:text="@string/cake_constructor"
         app:layout_constraintTop_toBottomOf="@id/cupcake_constructor_button"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/add_temporary_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/common_spacing"
+        style="@style/list_item_text"
         android:text="@string/add_temporary_good"
         app:layout_constraintTop_toBottomOf="@id/cake_constructor_button"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/add"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/common_spacing"
+        style="@style/list_item_text"
         android:text="@string/add"
         app:layout_constraintTop_toBottomOf="@id/add_temporary_button"
         tools:ignore="MissingConstraints" />
@@ -121,7 +99,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="-8dp"
-        android:theme="@style/theme.for.text"
+        android:theme="@style/theme.BakeryApp.titles"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@id/cake_image" />
 
@@ -134,7 +112,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cake_image1"
         app:layout_constraintHorizontal_bias="0.5"
-        android:theme="@style/theme.for.text"
+        android:theme="@style/theme.BakeryApp.titles"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/view_bottom"
         app:layout_constraintStart_toStartOf="parent"
@@ -149,7 +127,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cake_image2"
         app:layout_constraintHorizontal_bias="0.5"
-        android:theme="@style/theme.for.text"
+        android:theme="@style/theme.BakeryApp.titles"
         app:layout_constraintStart_toEndOf="@+id/cake_image"
         app:srcCompat="@drawable/cake3"
         tools:ignore="MissingConstraints" />
@@ -162,7 +140,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cake_image3"
         app:layout_constraintHorizontal_bias="0.5"
-        android:theme="@style/theme.for.text"
+        android:theme="@style/theme.BakeryApp.titles"
         app:layout_constraintStart_toEndOf="@+id/cake_image1"
         app:srcCompat="@drawable/cake2"
         tools:ignore="MissingConstraints" />
@@ -175,7 +153,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        android:theme="@style/theme.for.text"
+        android:theme="@style/theme.BakeryApp.titles"
         app:layout_constraintStart_toEndOf="@+id/cake_image2"
         app:srcCompat="@drawable/cake1"
         tools:ignore="MissingConstraints" />
