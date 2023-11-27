@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.bakeryapp.R
 import com.example.bakeryapp.databinding.FragmentMenuBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MenuFragment : Fragment() {
     override fun onCreateView(

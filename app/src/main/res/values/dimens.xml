@@ -4,7 +4,7 @@
     <dimen name="icon_size">16dp</dimen>
     <dimen name="min_padding">4dp</dimen>
     <dimen name="spacing_image">32dp</dimen>
-    <dimen name="table_padding">200dp</dimen>
+    <dimen name="table_padding">160dp</dimen>
     <dimen name="width_text">100dp</dimen>
     <dimen name="text_spacing">8dp</dimen>
     <dimen name="min_spacing">4dp</dimen>

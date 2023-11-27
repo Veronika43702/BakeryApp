@@ -53,7 +53,7 @@
                 android:layout_marginTop="@dimen/min_spacing"
                 android:paddingStart="@dimen/text_spacing"
                 android:text="@string/weight"
-                app:layout_constraintStart_toEndOf="@id/cupcake_text"
+                app:layout_constraintStart_toStartOf="@id/weight_value"
                 app:layout_constraintTop_toBottomOf="@id/title_barrier" />
 
             <TextView
@@ -76,7 +76,7 @@
                 android:paddingStart="@dimen/text_spacing"
                 android:paddingBottom="@dimen/min_spacing"
                 android:hint="0"
-                app:layout_constraintStart_toEndOf="@id/cupcake_text"
+                app:layout_constraintStart_toStartOf="@id/diameter_value"
                 app:layout_constraintTop_toBottomOf="@id/price" />
 
             <TextView
@@ -265,8 +265,8 @@
                 app:layout_constraintTop_toBottomOf="@id/sponge_view">
 
                 <TableRow>
-                    <TextView android:text="масло растительное" />
-                    <TextView android:text="110" />
+                    <TextView tools:text="масло растительное" />
+                    <TextView tools:text="110" />
                 </TableRow>
 
             </TableLayout>
@@ -311,7 +311,6 @@
                 <TableRow>
 
                     <TextView tools:text="сахар" />
-
                     <TextView tools:text="54" />
                 </TableRow>
 
@@ -356,9 +355,7 @@
                 app:layout_constraintTop_toBottomOf="@id/cream_ingredient_title">
 
                 <TableRow>
-
                     <TextView tools:text="сливки" />
-
                     <TextView tools:text="100" />
                 </TableRow>
 

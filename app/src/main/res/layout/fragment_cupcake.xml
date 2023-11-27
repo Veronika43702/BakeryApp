@@ -53,7 +53,7 @@
                 android:layout_marginTop="@dimen/min_spacing"
                 android:paddingStart="@dimen/text_spacing"
                 android:text="@string/price"
-                app:layout_constraintStart_toEndOf="@id/cupcake_text"
+                app:layout_constraintStart_toStartOf="@id/price_value"
                 app:layout_constraintTop_toBottomOf="@id/title_barrier" />
 
             <TextView
@@ -75,7 +75,7 @@
                 android:paddingStart="@dimen/text_spacing"
                 android:paddingBottom="@dimen/min_spacing"
                 android:hint="0"
-                app:layout_constraintStart_toEndOf="@id/cupcake_text"
+                app:layout_constraintStart_toStartOf="@id/quantity_value"
                 app:layout_constraintTop_toBottomOf="@id/price" />
 
             <TextView
@@ -242,9 +242,8 @@
 
                 <TableRow>
 
-                    <TextView android:text="масло растительное" />
-
-                    <TextView android:text="110" />
+                    <TextView tools:text="масло растительное" />
+                    <TextView tools:text="110" />
                 </TableRow>
 
             </TableLayout>
@@ -288,9 +287,8 @@
 
                 <TableRow>
 
-                    <TextView android:text="сахар" />
-
-                    <TextView android:text="54" />
+                    <TextView tools:text="сахар" />
+                    <TextView tools:text="54" />
                 </TableRow>
 
             </TableLayout>

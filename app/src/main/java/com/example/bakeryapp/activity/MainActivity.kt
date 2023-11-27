@@ -2,7 +2,8 @@ package com.example.bakeryapp.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.bakeryapp.R
+import java.sql.ResultSet
+import com.example.bakeryapp.database.DBConnection
 import com.example.bakeryapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,5 +13,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        val db = DBConnection().getDBConnection()
+        val table: ResultSet?
+        if (db != null) {
+            table = DBConnection().querySelect(db, "SELECT component_name, product_name FROM components where type = 'бисквит'")
+            table?.let { DBConnection().printTable(it) }
+        }
+        else println("failed")
     }
 }
