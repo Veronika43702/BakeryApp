@@ -12,8 +12,11 @@
 
     <string name="search">search...</string>
 
+    <string name="name">Name</string>
+    <string name="type">Type</string>
     <string name="weight">Weight</string>
     <string name="price">Price</string>
+    <string name="price1piece">Price</string>
     <string name="total_price">Total</string>
 
     <string name="quantity">Quantity</string>
@@ -35,4 +38,8 @@
 
     <string name="ingredient">Ingredient</string>
     <string name="receipt">Reciept</string>
+
+    <string name="retry_loading">Retry</string>
+    <string name="empty_posts">There are no products</string>
+    <string name="error_loading">Something went wrong. Try again later</string>
 </resources>

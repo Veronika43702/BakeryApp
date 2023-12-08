@@ -52,7 +52,7 @@
                 android:layout_height="0dp"
                 android:layout_marginTop="@dimen/min_spacing"
                 android:paddingStart="@dimen/text_spacing"
-                android:text="@string/price"
+                android:text="@string/price1piece"
                 app:layout_constraintStart_toStartOf="@id/price_value"
                 app:layout_constraintTop_toBottomOf="@id/title_barrier" />
 

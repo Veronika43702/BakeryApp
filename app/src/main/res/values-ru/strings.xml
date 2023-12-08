@@ -13,8 +13,11 @@
 
     <string name="search">поиск...</string>
 
+    <string name="name">Наименование</string>
+    <string name="type">Type</string>
     <string name="weight">Вес</string>
-    <string name="price">Цена 1шт</string>
+    <string name="price">Цена</string>
+    <string name="price1piece">Цена 1шт</string>
     <string name="total_price">Стоимость</string>
 
     <string name="quantity">Количество</string>
@@ -36,4 +39,8 @@
 
     <string name="ingredient">Состав</string>
     <string name="receipt">Рецепт</string>
+
+    <string name="retry_loading">Повторить</string>
+    <string name="empty_posts">Список продуктов пуст</string>
+    <string name="error_loading">Что-то пошло не так. Попробуйте позднее</string>
 </resources>

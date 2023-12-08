@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("org.jetbrains.kotlin.kapt")
     id("org.jetbrains.kotlin.android")
 }
 
@@ -42,7 +43,7 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.12.0")
+implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
@@ -54,5 +55,9 @@ dependencies {
     implementation("mysql:mysql-connector-java:8.0.28")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
     implementation("org.postgresql:postgresql:42.2.9")
-
+    kapt("androidx.room:room-compiler:2.6.0")
+    implementation("androidx.room:room-runtime:2.6.0")
+    implementation("androidx.room:room-ktx:2.6.0")
+    implementation("com.google.code.gson:gson:2.10.1")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
 }

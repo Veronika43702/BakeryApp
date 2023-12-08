@@ -1,4 +1,4 @@
-package com.example.bakeryapp.database
+package com.example.bakeryapp.server
 
 const val database="main"
 const val user="verona"
